@@ -23,7 +23,6 @@ $(function(){
           </tr>`
 
           $("#data").append(row);
-
         }
         
 
