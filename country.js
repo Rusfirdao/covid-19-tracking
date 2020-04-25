@@ -24,10 +24,9 @@ $(function(){
 
           $("#data").append(row);
         }
-        
 
     });
-
+    
 
 
 })
