@@ -24,7 +24,17 @@ $(function(){
 
           $("#data").append(row);
         }
+        var con = `<div>${selectedCountry[selectedCountry.length-1].confirmed}</div>`
 
+        $("#confirm").append(con);
+
+        var death = `<div>${selectedCountry[selectedCountry.length-1].deaths}</div>`
+
+        $("#death").append(death);
+
+        var reco = `<div>${selectedCountry[selectedCountry.length-1].recovered}</div>`
+
+        $("#recover").append(reco);
     });
     
 
