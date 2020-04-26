@@ -26,12 +26,12 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa"><img src="img/virus.png" alt="" width="46"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Covid-19</div>
       </a>
@@ -280,63 +280,76 @@
 
         </nav>
         <!-- End of Topbar -->
-
+      
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Covid-19 Live</h1>
-          
-          <div class="card shadow mb-4">
-            <div class="row">
-              <div class="card col-lg-4 col-md-4 col-sm-12 bg-danger" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title" id="confirm">Confirmed </h5>
-                 
-                  </div>
-                </div>
-                <div class="card col-lg-4 col-md-4 col-sm-12 bg-dark" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title"  id="death"> Deaths </h5>
-                  </div>
-                </div>
-                <div class="card col-lg-4 col-sm-12 col-sm-12 bg-success" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title" id="recover"> Recovered </h5>
+            <div class="container">
+              <div class="card shadow mb-4">
+                <div class="row">
+                  <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-warning" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title text-light" > Confirmed </h5>
+                        <h3 class="text-light" id="confirm"></h3>
+                      </div>
+                    </div>
+                    <div class="card col-lg-4 col-sm-12 col-sm-12 bg-gradient-success" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title text-light" > Recovered </h5>
+                        <h3 class="text-light"  id="recover"></h3>
+                        
+                      </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-danger" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title text-light"  > Deaths </h5>
+                        <h3 class="text-light"  id="death"></h3>
+                      </div>
+                    </div>
                     
-                  </div>
                 </div>
             </div>
           </div>
           <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
-          <div class="row">
-            <canvas id="lineChart"></canvas>
-          </div>
+        
+        </div>
+        <!-- /.container-fluid -->
+      
+          
           <!-- DataTales Example -->
+
+          <div class="container-fluid">
             <div class="card shadow mb-4">
               <div class="card-body">
-                <div class="table-responsive">
-                  <div class="container">
-                    <h2  id="country"></h2>
-                    <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col-">Date</th>
-                            <th scope="col">Confirmed</th>
-                            <th scope="col">Deaths</th>
-                            <th scope="col">Recovered</th>
-                          </tr>
-                        </thead>
-                        <tbody id="data"> 
-                        </tbody>
-                    </table>
-                  </div>
+               
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class class="card-body d-flex justify-content-around"><canvas class="chart" width="400" height="70" id="lineChart"></canvas></div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="table-responsive">
+                <div class="container">
+                  <h2  id="country"></h2>
+                  <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col-">Date</th>
+                          <th scope="col">Confirmed</th>
+                          <th scope="col">Deaths</th>
+                          <th scope="col">Recovered</th>
+                        </tr>
+                      </thead>
+                      <tbody id="data"> 
+                      </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-
-        </div>
-        <!-- /.container-fluid -->
+          </div>
 
 
       </div>
@@ -394,26 +407,22 @@
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./country.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js
+    "></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
 </body>
 
 </html>
