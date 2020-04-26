@@ -162,7 +162,6 @@ $(function(){
             maintainAspectRatio     : true,
             legend: {
               display: true,
-              position: 'right',
               labels: {
                 boxWidth: 15,
                 defaultFontColor: '#343a40',
@@ -171,8 +170,8 @@ $(function(){
             }
           }
         
-          var ctxBar = document.getElementById("lineChart");
-          new Chart(ctxBar, {
+          var myChart = document.getElementById("lineChart");
+          new Chart(myChart, {
             type: 'line',
             data: areaChartData,
             options: lineChartOptions
