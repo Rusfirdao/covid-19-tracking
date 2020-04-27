@@ -25,15 +25,18 @@ $(function(){
 
           $("#data").append(row);
         }
-        var totolConfirm = `<div>${selectedCountry[selectedCountry.length-1].confirmed}</div>`
+        var lastUpdate = `${selectedCountry[selectedCountry.length-1].date}`
+        $("#date").append(lastUpdate );
+
+        var totolConfirm = `<div><center>${selectedCountry[selectedCountry.length-1].confirmed}</center></div>`
 
         $("#confirm").append(totolConfirm);
 
-        var totolDeath = `<div>${selectedCountry[selectedCountry.length-1].deaths}</div>`
+        var totolDeath = `<div><center>${selectedCountry[selectedCountry.length-1].deaths}</center></div>`
 
         $("#death").append(totolDeath);
 
-        var totolRecover = `<div>${selectedCountry[selectedCountry.length-1].recovered}</div>`
+        var totolRecover = `<div><center>${selectedCountry[selectedCountry.length-1].recovered}</center></div>`
 
         $("#recover").append(totolRecover);
 

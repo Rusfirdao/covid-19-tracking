@@ -284,34 +284,38 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           <!-- Page Heading -->
+          <h2 id="country"></h2>
+          <div id="date" > <h10 class="text-gray-inline">Latest update : </h10></div>
+          
+          
             <div class="container">
-              <div class="card shadow mb-4">
-                <div class="row">
-                  <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-warning" style="width: 18rem;">
-                      <div class="card-body">
-                        <h5 class="card-title text-light" > Confirmed </h5>
-                        <h3 class="text-light" id="confirm"></h3>
-                      </div>
+              <!-- <div class="card shadow "> -->
+               
+                 <div class="row">
+                  <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-warning mb-4" style="">
+                    <div class="card-body">
+                      <h5 class="card-title text-light" > Confirmed </h5>
+                      <h3 class="text-light" id="confirm"></h3>
                     </div>
-                    <div class="card col-lg-4 col-md-12 col-sm-12 bg-gradient-success" style="width: 18rem;">
-                      <div class="card-body">
-                        <h5 class="card-title text-light" > Recovered </h5>
-                        <h3 class="text-light"  id="recover"></h3>
-                        
-                      </div>
+                  </div>
+                  <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-success mb-4" style="">
+                    <div class="card-body">
+                      <h5 class="card-title text-light" > Recovered </h5>
+                      <h3 class="text-light"  id="recover"></h3>
                     </div>
-                    <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-danger" style="width: 18rem;">
-                      <div class="card-body">
-                        <h5 class="card-title text-light"  > Deaths </h5>
-                        <h3 class="text-light"  id="death"></h3>
-                      </div>
+                  </div>
+                  <div class="card col-lg-4 col-md-4 col-sm-12 bg-gradient-danger mb-4" style="">
+                    <div class="card-body">
+                      <h5 class="card-title text-light"  > Deaths </h5>
+                      <h3 class="text-light"  id="death"></h3>
                     </div>
+                  </div>
+                 </div>
                     
-                </div>
-            </div>
+                
+            <!-- </div> -->
           </div>
-          <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
-        
+         
         </div>
         <!-- /.container-fluid -->
       
@@ -332,11 +336,11 @@
             <div class="card-body">
               <div class="table-responsive">
                 <div class="container">
-                  <h2  id="country"></h2>
+                  
                   <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th scope="col-">Date</th>
+                          <th scope="col">Date</th>
                           <th scope="col">Confirmed</th>
                           <th scope="col">Deaths</th>
                           <th scope="col">Recovered</th>
@@ -371,28 +375,7 @@
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
